@@ -1,0 +1,32 @@
+{
+  "bleu": {
+    "params": {
+      "effective_order": false,
+      "lowercase": false,
+      "smooth_method": "exp",
+      "tokenize": "13a"
+    },
+    "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0"
+  },
+  "chrf": {
+    "params": {
+      "beta": 2,
+      "char_order": 6,
+      "lowercase": false,
+      "whitespace": false,
+      "word_order": 0
+    },
+    "signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0"
+  },
+  "recorded_at": "2026-09-28T23:15:54.145013+00:00",
+  "sacrebleu_version": "2.6.0",
+  "ter": {
+    "params": {
+      "asian_support": false,
+      "case_sensitive": false,
+      "no_punct": false,
+      "normalized": false
+    },
+    "signature": "nrefs:1|case:lc|tok:tercom|norm:no|punct:yes|asian:no|version:2.6.0"
+  }
+}

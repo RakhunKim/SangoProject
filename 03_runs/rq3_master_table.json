@@ -1,0 +1,101 @@
+[
+  {
+    "best_adaptation_dev_chrf": "58.04536445513509",
+    "best_step": "500",
+    "method": "LoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 42,
+    "trainable_params": "9437184",
+    "trainable_pct": "1.5111",
+    "wallclock_h": 2.12,
+    "wallclock_source": "registry(clean run)"
+  },
+  {
+    "best_adaptation_dev_chrf": "58.11505190049624",
+    "best_step": "1250",
+    "method": "DoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 42,
+    "trainable_params": "9584640",
+    "trainable_pct": "1.5344",
+    "wallclock_h": 3.68,
+    "wallclock_source": "registry(clean run)"
+  },
+  {
+    "best_adaptation_dev_chrf": "59.08439106169187",
+    "best_step": "1500",
+    "method": "OFT",
+    "peak_gpu_memory_gb": "3.22",
+    "seed": 42,
+    "trainable_params": "2285568",
+    "trainable_pct": "0.3702",
+    "wallclock_h": 3.31,
+    "wallclock_source": "registry(clean run)"
+  },
+  {
+    "best_adaptation_dev_chrf": "58.79973807235383",
+    "best_step": "750",
+    "method": "DoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 43,
+    "trainable_params": "9584640",
+    "trainable_pct": "1.5344",
+    "wallclock_h": 3.759,
+    "wallclock_source": "reconstructed/estimated"
+  },
+  {
+    "best_adaptation_dev_chrf": "58.96128382725787",
+    "best_step": "1000",
+    "method": "OFT",
+    "peak_gpu_memory_gb": "3.22",
+    "seed": 43,
+    "trainable_params": "2285568",
+    "trainable_pct": "0.3702",
+    "wallclock_h": 3.28,
+    "wallclock_source": "registry(clean run)"
+  },
+  {
+    "best_adaptation_dev_chrf": "59.0557372101297",
+    "best_step": "750",
+    "method": "LoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 43,
+    "trainable_params": "9437184",
+    "trainable_pct": "1.5111",
+    "wallclock_h": 2.05,
+    "wallclock_source": "registry(clean run)"
+  },
+  {
+    "best_adaptation_dev_chrf": "59.107108691035506",
+    "best_step": "2250",
+    "method": "OFT",
+    "peak_gpu_memory_gb": "3.22",
+    "seed": 44,
+    "trainable_params": "2285568",
+    "trainable_pct": "0.3702",
+    "wallclock_h": 3.308,
+    "wallclock_source": "reconstructed/estimated"
+  },
+  {
+    "best_adaptation_dev_chrf": "58.7944060009547",
+    "best_step": "1000",
+    "method": "LoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 44,
+    "trainable_params": "9437184",
+    "trainable_pct": "1.5111",
+    "wallclock_h": 2.18,
+    "wallclock_source": "reconstructed/estimated"
+  },
+  {
+    "best_adaptation_dev_chrf": "58.76610902839114",
+    "best_step": "1000",
+    "method": "DoRA",
+    "peak_gpu_memory_gb": "3.25",
+    "seed": 44,
+    "trainable_params": "9584640",
+    "trainable_pct": "1.5344",
+    "wallclock_h": 3.9,
+    "wallclock_source": "registry(clean run)"
+  }
+]

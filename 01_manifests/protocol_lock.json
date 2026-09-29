@@ -1,0 +1,19 @@
+{
+  "bf16": false,
+  "decision": "A - all three PEFT methods (LoRA/DoRA/OFT) trained in FP32",
+  "diagnostic_records": [
+    "oft_fp32_diagnostic.json",
+    "oft_amp_fp32load_diagnostic.json"
+  ],
+  "evaluation_precision": "FP32",
+  "fp16": false,
+  "gradient_checkpointing": true,
+  "next_step": "formal 250-step smoke test (not just 12-step quick check) for LoRA/DoRA/OFT under FP32 before main 9 runs — dev generation/chrF/BLEU, best/rolling/history checkpoints, save/reload, resume, peak VRAM under realistic conditions, COMPLETE.",
+  "rationale": "OFT smoke test under FP16 autocast produced NaN gradients on the first 4/12 steps, causing those optimizer steps to be silently skipped (no parameter update, no LR scheduler advance), which would have broken the \"identical optimizer-step budget across all nine main runs\" comparability requirement. Diagnostics isolated the cause to FP16 autocast itself (not backbone loading dtype). Changing precision for OFT only would confound PEFT method with precision in RQ1/RQ3; therefore FP32 applied uniformly.",
+  "recorded_at": "2026-09-28T23:18:45.743361+00:00",
+  "superseded_records": [
+    "loss_verification_fp16.json",
+    "oft_fp16_smoke_failed.json"
+  ],
+  "training_precision": "FP32"
+}

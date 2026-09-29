@@ -1,0 +1,46 @@
+SANGO PROJECT 2 — Notes on files excluded from this GitHub repository
+========================================================================
+
+This repository was uploaded from a Google Drive source (total 7.3GB), with
+the items below excluded. Total uploaded size: approximately 2.0GB
+(approximately 5.3GB excluded).
+
+## Excluded items
+
+1. SMOKE/ (approximately 2.5GB)
+   - Full output of the 250-step preliminary smoke tests
+   - As stated in the manuscript: "Smoke-test outputs are stored separately
+     and are not included in the experimental analysis."
+   - These are preliminary validation artifacts unrelated to the reported
+     experimental results.
+
+2. 03_runs/{LoRA,DoRA,OFT}/seed{42,43,44}/trainer_checkpoints/ (approximately 1.56GB total)
+   - Rolling resumable checkpoints saved every 250 steps during training
+     (including optimizer/scheduler/RNG state, used to resume interrupted runs)
+   - All nine runs completed successfully (COMPLETED status), and these
+     intermediate checkpoints are not used to reproduce the final results.
+     The artifacts required for reproduction — best_adapter/, final_adapter/,
+     and history_adapters/ — are all included in this repository.
+
+3. data_build/after_laser.jsonl (approximately 476MB)
+   - An intermediate snapshot from the data-cleaning pipeline, taken
+     immediately after LASER-based filtering
+   - Superseded by the final clean pool (item 4, also excluded) and
+     reproducible from the original NLLB data using audit_dedup_and_laser.py.
+
+4. data_build/final_clean_pool.jsonl (approximately 921MB)
+   - The fully cleaned pool of parallel sentence pairs (n = 3,013,344)
+   - Original source: allenai/nllb (eng_Latn-sag_Latn), cited in the
+     manuscript with the exact revision used.
+   - Excluded to reduce repository size, as it is a large derived
+     intermediate file from a publicly available dataset.
+
+## Contact
+
+If you need any of the excluded items above, please contact the author at
+kimrhee02@hongik.ac.kr and they will be provided upon request. All materials
+required to reproduce the core findings of the paper (best/final/history
+adapters for all nine training runs, complete evaluation results, and the
+underlying statistical analysis data) are included in this repository.
+
+Generated on: 2026-09-29

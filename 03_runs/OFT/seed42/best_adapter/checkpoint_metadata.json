@@ -1,0 +1,6 @@
+{
+  "checkpoint_role": "best",
+  "global_step": 1500,
+  "adaptation_dev_chrf": 59.08439106169187,
+  "source_checkpoint": "/content/drive/MyDrive/sango_project2/03_runs/OFT/seed42/trainer_checkpoints/checkpoint-1500"
+}

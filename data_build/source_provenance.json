@@ -1,0 +1,10 @@
+{
+  "dataset": "allenai/nllb",
+  "config": "eng_Latn-sag_Latn",
+  "revision_used": "c36967abb45f06ff7659849372ab41e01838193e",
+  "note": "revision은 HF repo(로딩 스크립트)의 commit sha다. 실제 병렬 데이터는 AllenAI GCS(storage.googleapis.com/allennlp-data-bucket/nllb/)에서 별도로 받아오므로, GCS 파일 자체의 byte-level 불변성까지는 보장하지 않는다. 그래서 final_clean_pool의 content-based pair_id와 SHA-256을 별도로 보존한다.",
+  "datasets_library_version": "3.6.0",
+  "loaded_rows_this_run": 3607439,
+  "laser_threshold": 1.0,
+  "rows_after_laser_filter": 3607439
+}

@@ -1,0 +1,17 @@
+{
+  "adaptation_dev_sha256": "7d3abd4fea87b125bc11503db7a57c196a96c799e37e42a32287cb87186652a4",
+  "dev_sentence_ids": [
+    "direct9k_00031",
+    "direct9k_00032",
+    "direct9k_00033",
+    "direct9k_00034",
+    "direct9k_00035",
+    "direct9k_00036",
+    "direct9k_00037",
+    "direct9k_00038",
+    "direct9k_00039",
+    "direct9k_00040"
+  ],
+  "note": "smoke test 전용 — 실제 Deo 검증된 adaptation-dev 아님, 파이프라인 검증용",
+  "test_sentence_ids": []
+}

@@ -1,0 +1,25 @@
+{
+  "method": "lora",
+  "seed": 43,
+  "train_path": "/content/drive/MyDrive/sango_project2/data_build/direct9k_train.jsonl",
+  "dev_path": "/content/drive/MyDrive/sango_project2/evaluation/adaptation_dev.jsonl",
+  "train_sha256": "3af7cafb3e2377aa4944a020a7c0347ab84584902f7f618d74dbb54af228dcab",
+  "dev_sha256": "ece456e8c7e50562456f508caf3bb668009c5d6d0535f5105a4c515f4e22f769",
+  "max_steps": 3375,
+  "eval_save_interval": 250,
+  "warmup_steps": 338,
+  "warmup_ratio_locked": 0.1,
+  "history_interval": 500,
+  "logging_steps": 50,
+  "num_beams": 1,
+  "model_id": "facebook/nllb-200-distilled-600M",
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "out_proj"
+  ],
+  "started_at": "2026-08-17T22:27:30.589914+00:00",
+  "resume": false,
+  "model_revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d"
+}

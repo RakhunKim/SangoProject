@@ -1,0 +1,19 @@
+{
+  "dataset": "openlanguagedata/flores_plus",
+  "revision": "b3a5298db5721c8a682e7ef00a37fcc9ab522757",
+  "en_config": "eng_Latn",
+  "sg_config": "sag_Latn",
+  "splits": {
+    "dev": {
+      "path": "/content/drive/MyDrive/sango_project2/flores/flores_dev_eng_sag.jsonl",
+      "count": 997,
+      "sha256": "5f7bafaa2fb5e9429d8029948a61bc0dbe7bbdb0c288897ca25045114608e923"
+    },
+    "devtest": {
+      "path": "/content/drive/MyDrive/sango_project2/flores/flores_devtest_eng_sag.jsonl",
+      "count": 1012,
+      "sha256": "6a834cfb2584dc45351b0dbce58b3caecaffaa001bd049cfab39406183f788a8"
+    }
+  },
+  "note": "FLORES-200은 공개 검증된 벤치마크라 원어민(Deo) 재검증 없이 그대로 사용. evaluation candidate(350개)/Direct-9K와 유일하게 겹쳐도 되는 자료."
+}

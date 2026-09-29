@@ -1,0 +1,16 @@
+{
+  "conclusion_scope": "In the frozen software environment and OFT configuration used in this study, FP16 autocast produced numerical instability, whereas full FP32 training remained stable. This is not asserted as a general incompatibility between FP16 autocast and Cayley-Neumann OFT beyond the tested configuration.",
+  "condition": "dtype=torch.float32 (default) backbone load + Seq2SeqTrainingArguments(fp16=True) -- i.e. \"standard\" AMP recipe (fp32 weights + autocast), isolating loading dtype from autocast",
+  "finding": "NaN reproduced even with standard-recipe AMP (fp32-loaded weights + autocast). This isolates the cause to FP16 autocast itself (not to the non-standard fp16-preload pattern flagged by HF troubleshooting docs, which was ruled out by this test).",
+  "grad_norm_steps_1_4": [
+    "nan",
+    "nan",
+    "nan",
+    "nan"
+  ],
+  "max_steps": 12,
+  "method": "oft",
+  "recorded_at": "2026-09-28T23:18:45.729476+00:00",
+  "result": "FAIL",
+  "seed": 42
+}

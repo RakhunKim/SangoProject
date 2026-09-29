@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "fp16_diff": 0.00047206878662109375,
+    "fp16_tolerance_atol": 0.001,
+    "fp16_within_tolerance": true,
+    "fp32_exact_match_diff": 0.0
+  },
+  "label_pad_token_id": -100,
+  "label_smoothing_factor": 0.0,
+  "loss_verification": "PASS",
+  "manuscript_equations": "8-11",
+  "manuscript_section": "3.3.2",
+  "model_class": "M2M100ForConditionalGeneration",
+  "note": "Model-internal loss (M2M100ForConditionalGeneration) uses nn.CrossEntropyLoss() with library defaults: ignore_index=-100, reduction=mean, label_smoothing=0.0 — matching Eq. (11) without any extra configuration at the model level. label_smoothing_factor=0.0 still needs separate verification against TrainingArguments in train_run.py, since Trainer.LabelSmoother would override this internal loss if left nonzero there.",
+  "operational_objective": "Eq. 11",
+  "recorded_at": "2026-09-28T23:15:53.830634+00:00",
+  "superseded_note": "FP16 mixed precision 하에서의 Eq.(11) 검증 기록 — 2026-08-16 OFT NaN 발견으로 세 방법 모두 FP32로 refreeze되면서 이 precision 설정 자체가 더 이상 main run에 쓰이지 않음. 삭제하지 않고 provenance로 보존."
+}

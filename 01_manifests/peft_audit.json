@@ -1,0 +1,19 @@
+{
+  "injection_check": "adapter host modules verified == target_modules for all three methods",
+  "peft_version": "0.21.0",
+  "recorded_at": "2026-09-28T23:15:36.874476+00:00",
+  "trainable_parameters": {
+    "DoRA": {
+      "total": 624658432,
+      "trainable": 9584640
+    },
+    "LoRA": {
+      "total": 624510976,
+      "trainable": 9437184
+    },
+    "OFT": {
+      "total": 617359360,
+      "trainable": 2285568
+    }
+  }
+}

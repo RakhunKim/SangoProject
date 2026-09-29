@@ -1,0 +1,37 @@
+family,comparison,observed_delta_chrf,raw_p,holm_adjusted_p,significant_alpha05
+F1_adaptation_vs_zeroshot,LoRA-42,-4.325,0.0019,0.0051,True
+F1_adaptation_vs_zeroshot,DoRA-42,-5.174,0.0003,0.0027,True
+F1_adaptation_vs_zeroshot,OFT-42,-4.7,0.0007,0.0049,True
+F1_adaptation_vs_zeroshot,LoRA-43,-4.909,0.0005,0.004,True
+F1_adaptation_vs_zeroshot,DoRA-43,-4.775,0.0007,0.0049,True
+F1_adaptation_vs_zeroshot,OFT-43,-3.939,0.0023,0.0051,True
+F1_adaptation_vs_zeroshot,LoRA-44,-4.335,0.001,0.005,True
+F1_adaptation_vs_zeroshot,DoRA-44,-4.374,0.001,0.005,True
+F1_adaptation_vs_zeroshot,OFT-44,-4.365,0.0017,0.0051,True
+F2_adaptation_PEFT_seedmatched,LoRA-42 - DoRA-42,0.849,0.11289,0.79023,False
+F2_adaptation_PEFT_seedmatched,LoRA-42 - OFT-42,0.375,0.23148,0.92592,False
+F2_adaptation_PEFT_seedmatched,DoRA-42 - OFT-42,-0.474,0.18138,0.9069,False
+F2_adaptation_PEFT_seedmatched,LoRA-43 - DoRA-43,-0.134,0.12529,0.79023,False
+F2_adaptation_PEFT_seedmatched,LoRA-43 - OFT-43,-0.97,0.07739,0.69651,False
+F2_adaptation_PEFT_seedmatched,DoRA-43 - OFT-43,-0.836,0.09789,0.78312,False
+F2_adaptation_PEFT_seedmatched,LoRA-44 - DoRA-44,0.039,0.34547,1.0,False
+F2_adaptation_PEFT_seedmatched,LoRA-44 - OFT-44,0.03,0.39386,1.0,False
+F2_adaptation_PEFT_seedmatched,DoRA-44 - OFT-44,-0.009,0.41326,1.0,False
+F3_flores_vs_zeroshot,LoRA-42,-5.015,0.0001,0.0009,True
+F3_flores_vs_zeroshot,DoRA-42,-5.007,0.0001,0.0009,True
+F3_flores_vs_zeroshot,OFT-42,-5.242,0.0001,0.0009,True
+F3_flores_vs_zeroshot,LoRA-43,-5.36,0.0001,0.0009,True
+F3_flores_vs_zeroshot,DoRA-43,-5.443,0.0001,0.0009,True
+F3_flores_vs_zeroshot,OFT-43,-5.165,0.0001,0.0009,True
+F3_flores_vs_zeroshot,LoRA-44,-5.231,0.0001,0.0009,True
+F3_flores_vs_zeroshot,DoRA-44,-5.195,0.0001,0.0009,True
+F3_flores_vs_zeroshot,OFT-44,-4.973,0.0001,0.0009,True
+F4_flores_PEFT_seedmatched,LoRA-42 - DoRA-42,-0.008,0.40546,0.80423,False
+F4_flores_PEFT_seedmatched,LoRA-42 - OFT-42,0.227,0.14549,0.80423,False
+F4_flores_PEFT_seedmatched,DoRA-42 - OFT-42,0.235,0.12859,0.80423,False
+F4_flores_PEFT_seedmatched,LoRA-43 - DoRA-43,0.083,0.06569,0.59121,False
+F4_flores_PEFT_seedmatched,LoRA-43 - OFT-43,-0.195,0.15278,0.80423,False
+F4_flores_PEFT_seedmatched,DoRA-43 - OFT-43,-0.278,0.09929,0.79432,False
+F4_flores_PEFT_seedmatched,LoRA-44 - DoRA-44,-0.036,0.23328,0.80423,False
+F4_flores_PEFT_seedmatched,LoRA-44 - OFT-44,-0.258,0.11489,0.80423,False
+F4_flores_PEFT_seedmatched,DoRA-44 - OFT-44,-0.222,0.13699,0.80423,False

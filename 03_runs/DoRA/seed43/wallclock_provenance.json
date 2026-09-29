@@ -1,0 +1,14 @@
+{
+  "discarded_tail_note": "첫 세션이 checkpoint-2000 이후 2062까지 더 진행했으나 미저장 상태로 소실, resume이 2001부터 다시 계산해 이중계산 방지 위해 제외",
+  "discarded_tail_steps": 62,
+  "interrupted": true,
+  "reconstructed_total_hours": 3.759,
+  "reconstructed_total_seconds": 13533,
+  "resume_checkpoint": 2000,
+  "run": "DoRA_seed43",
+  "timing_source": "reconstructed",
+  "valid_segment_1_note": "session1: step0 -> checkpoint-2000 저장 완료 시점 (2:15:44)",
+  "valid_segment_1_seconds": 8144,
+  "valid_segment_2_note": "session2(resume): checkpoint-2000 -> 3375 전체(자동 기록된 train_runtime)",
+  "valid_segment_2_seconds": 5389
+}

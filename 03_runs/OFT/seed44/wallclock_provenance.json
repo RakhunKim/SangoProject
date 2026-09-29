@@ -1,0 +1,14 @@
+{
+  "discarded_tail_note": "첫 세션이 checkpoint-2000 이후 2209까지 더 진행했으나 T4 연결 끊김으로 미저장 소실, resume이 2001부터 다시 계산해 이중계산 방지 위해 제외",
+  "discarded_tail_steps": 209,
+  "interrupted": true,
+  "reconstructed_total_hours": 3.308,
+  "reconstructed_total_seconds": 11909,
+  "resume_checkpoint": 2000,
+  "run": "OFT_seed44",
+  "timing_source": "reconstructed",
+  "valid_segment_1_note": "session1: step0 -> checkpoint-2000 저장 완료 시점(1:56:48)",
+  "valid_segment_1_seconds": 7008,
+  "valid_segment_2_note": "session2(resume): checkpoint-2000 -> 3375 전체(자동 기록된 train_runtime)",
+  "valid_segment_2_seconds": 4901
+}

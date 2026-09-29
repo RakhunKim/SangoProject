@@ -1,0 +1,12 @@
+{
+  "learning_rate": 0.0001,
+  "max_steps": 3375,
+  "note": "transformers>=5.x removed TrainingArguments.warmup_ratio; it merged into warmup_steps (float): values >=1 are an absolute step count, values <1 are treated as a ratio of num_training_steps. Passing warmup_ratio=0.1 now raises TypeError. Any existing script (e.g. train_run.py) written against the older API must be updated to warmup_steps=0.1 before it will run.",
+  "optimizer": "Adafactor",
+  "recorded_at": "2026-09-28T23:15:37.397900+00:00",
+  "resolved_warmup_steps": 338,
+  "scheduler": "linear",
+  "transformers_version": "5.17.0",
+  "warmup_field_used": "warmup_steps",
+  "warmup_field_value": 0.1
+}

@@ -1,0 +1,6 @@
+{
+  "checkpoint_role": "best",
+  "global_step": 750,
+  "adaptation_dev_chrf": 59.0557372101297,
+  "source_checkpoint": "/content/drive/MyDrive/sango_project2/03_runs/LoRA/seed43/trainer_checkpoints/checkpoint-750"
+}

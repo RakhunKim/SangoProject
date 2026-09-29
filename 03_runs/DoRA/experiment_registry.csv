@@ -1,0 +1,4 @@
+run_name,method,seed,max_steps,num_beams,status,completed_at,session_wallclock_h,cumulative_wallclock_h,trainable_params,all_params,trainable_pct,best_adaptation_dev_chrf,best_step,peak_gpu_memory_gb,gpu_model,transformers_version,peft_version,torch_version,sacrebleu_version,training_precision,fp16,bf16
+dora_seed42,dora,42,3375,1,completed,2026-08-17T09:00:56.820529+00:00,3.68,3.68,9584640,624658432,1.5344,58.11505190049624,1250,3.25,Tesla T4,5.15.0,0.20.0,2.11.0+cu128,2.6.0,fp32,False,False
+dora_seed43,dora,43,3375,1,completed,2026-08-17T16:38:44.977191+00:00,1.5,1.5,9584640,624658432,1.5344,58.79973807235383,750,3.25,Tesla T4,5.15.0,0.20.0,2.11.0+cu128,2.6.0,fp32,False,False
+dora_seed44,dora,44,3375,1,completed,2026-08-18T14:36:42.754288+00:00,3.9,3.9,9584640,624658432,1.5344,58.76610902839114,1000,3.25,Tesla T4,5.15.0,0.20.0,2.11.0+cu128,2.6.0,fp32,False,False

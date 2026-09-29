@@ -1,0 +1,10 @@
+best_adaptation_dev_chrf,best_step,method,peak_gpu_memory_gb,seed,trainable_params,trainable_pct,wallclock_h,wallclock_source
+58.04536445513509,500,LoRA,3.25,42,9437184,1.5111,2.12,registry(clean run)
+58.11505190049624,1250,DoRA,3.25,42,9584640,1.5344,3.68,registry(clean run)
+59.08439106169187,1500,OFT,3.22,42,2285568,0.3702,3.31,registry(clean run)
+58.79973807235383,750,DoRA,3.25,43,9584640,1.5344,3.759,reconstructed/estimated
+58.96128382725787,1000,OFT,3.22,43,2285568,0.3702,3.28,registry(clean run)
+59.0557372101297,750,LoRA,3.25,43,9437184,1.5111,2.05,registry(clean run)
+59.107108691035506,2250,OFT,3.22,44,2285568,0.3702,3.308,reconstructed/estimated
+58.7944060009547,1000,LoRA,3.25,44,9437184,1.5111,2.18,reconstructed/estimated
+58.76610902839114,1000,DoRA,3.25,44,9584640,1.5344,3.9,registry(clean run)

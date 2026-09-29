@@ -1,0 +1,20 @@
+{
+  "backbone": {
+    "repo": "facebook/nllb-200-distilled-600M",
+    "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d"
+  },
+  "flores_plus": {
+    "repo": "openlanguagedata/flores_plus",
+    "revision": "b3a5298db5721c8a682e7ef00a37fcc9ab522757"
+  },
+  "meyng_vocabulary": {
+    "repo": "MEYNG/sango-vocabulary",
+    "revision": "24e7dda61bc5447a9bb598c2ae3783196870a194"
+  },
+  "recorded_at": "2026-09-28T23:14:30.762427+00:00",
+  "training_corpus": {
+    "config": "eng_Latn-sag_Latn",
+    "repo": "allenai/nllb",
+    "revision": "c36967abb45f06ff7659849372ab41e01838193e"
+  }
+}

@@ -1,0 +1,6 @@
+# SANGO PEFT 2026 — frozen Phase 2 training stack
+# torch at freeze time: 2.11.0+cu128 (cuda 12.8) — NOT pinned, comes from Colab image
+transformers==5.17.0
+datasets==5.0.1
+peft==0.21.0
+sacrebleu==2.6.0

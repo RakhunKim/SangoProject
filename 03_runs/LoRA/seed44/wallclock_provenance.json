@@ -1,0 +1,14 @@
+{
+  "discarded_tail_steps": 0,
+  "interrupted": true,
+  "note": "다른 resume run과 달리 segment1이 추정치임 — RQ3 분석 시 이 점 명시 필요",
+  "reconstructed_total_hours_estimated": 2.18,
+  "reconstructed_total_seconds_estimated": 7847,
+  "resume_checkpoint": 2000,
+  "run": "LoRA_seed44",
+  "timing_source": "estimated",
+  "valid_segment_1_note": "첫 세션 로그 미확보(브라우저 응답없음)로 정확한 시간 불명 — 이 run 자체의 resume 구간 속도(2.326s/step)로 2000step 추정",
+  "valid_segment_1_seconds_estimated": 4652,
+  "valid_segment_2_note": "session2(resume): checkpoint-2000 -> 3375 전체(자동 기록된 train_runtime, 정확함)",
+  "valid_segment_2_seconds": 3195
+}

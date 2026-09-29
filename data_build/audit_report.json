@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "pair_id_disjoint": true,
+    "candidate_count_matches": true,
+    "train_count_matches": true,
+    "train_ids_unique": true,
+    "candidate_ids_unique": true,
+    "candidate_en_unique": true,
+    "candidate_sg_unique": true,
+    "normalized_en_overlap": 0,
+    "normalized_sg_overlap": 0,
+    "lineage_consistent": true,
+    "candidate_sidecar_matches": true
+  },
+  "hard_failures": [],
+  "artifact_hashes": {
+    "final_clean_pool_sha256": "5504bb5dc13a630f6018725c1e7ee48dbe546d9a1eb24f344c9ca9525169f691",
+    "evaluation_candidates_sha256": "75268179e4ccf15e7bd2df5e501d4b7b29b25d16ede44b0c1db57ac27d56f262",
+    "direct9k_train_sha256": "3af7cafb3e2377aa4944a020a7c0347ab84584902f7f618d74dbb54af228dcab"
+  }
+}

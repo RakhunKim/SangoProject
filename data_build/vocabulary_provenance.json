@@ -1,0 +1,8 @@
+{
+  "dataset": "MEYNG/sango-vocabulary",
+  "filename": "vocabulary.jsonl",
+  "repo_sha_at_fetch_time": "24e7dda61bc5447a9bb598c2ae3783196870a194",
+  "n_entries": 607,
+  "n_french_tokens": 653,
+  "source_file_sha256": "5c204e1acc92d52902e22476b9d5e96f46d190041633968aef2f57fcb8c37932"
+}

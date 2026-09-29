@@ -1,0 +1,12 @@
+{
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "transformers_version": "5.15.0",
+  "peft_version": "0.20.0",
+  "torch_version": "2.11.0+cu128",
+  "sacrebleu_version": "2.6.0",
+  "cuda_available": true,
+  "gpu_model": "Tesla T4",
+  "training_precision": "fp32",
+  "fp16": false,
+  "bf16": false
+}

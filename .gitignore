@@ -1,0 +1,6 @@
+SMOKE/
+03_runs/*/seed*/trainer_checkpoints/
+data_build/after_laser.jsonl
+data_build/final_clean_pool.jsonl
+__pycache__/
+*.pyc

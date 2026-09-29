@@ -1,0 +1,19 @@
+family,comparison,ci_low,ci_high,p_check
+F2_adaptation_PEFT_seedmatched,LoRA-42 - DoRA-42,-0.724,2.379,0.11289
+F2_adaptation_PEFT_seedmatched,LoRA-42 - OFT-42,-1.337,2.065,0.23148
+F2_adaptation_PEFT_seedmatched,DoRA-42 - OFT-42,-1.968,0.969,0.18138
+F2_adaptation_PEFT_seedmatched,LoRA-43 - DoRA-43,-0.424,0.113,0.12529
+F2_adaptation_PEFT_seedmatched,LoRA-43 - OFT-43,-2.411,0.314,0.07739
+F2_adaptation_PEFT_seedmatched,DoRA-43 - OFT-43,-2.273,0.425,0.09789
+F2_adaptation_PEFT_seedmatched,LoRA-44 - DoRA-44,-0.627,0.555,0.34547
+F2_adaptation_PEFT_seedmatched,LoRA-44 - OFT-44,-1.371,1.43,0.39386
+F2_adaptation_PEFT_seedmatched,DoRA-44 - OFT-44,-1.28,1.269,0.41326
+F4_flores_PEFT_seedmatched,LoRA-42 - DoRA-42,-0.498,0.469,0.40546
+F4_flores_PEFT_seedmatched,LoRA-42 - OFT-42,-0.317,0.75,0.14549
+F4_flores_PEFT_seedmatched,DoRA-42 - OFT-42,-0.266,0.72,0.12859
+F4_flores_PEFT_seedmatched,LoRA-43 - DoRA-43,-0.026,0.199,0.06569
+F4_flores_PEFT_seedmatched,LoRA-43 - OFT-43,-0.668,0.286,0.15278
+F4_flores_PEFT_seedmatched,DoRA-43 - OFT-43,-0.742,0.193,0.09929
+F4_flores_PEFT_seedmatched,LoRA-44 - DoRA-44,-0.203,0.127,0.23328
+F4_flores_PEFT_seedmatched,LoRA-44 - OFT-44,-0.735,0.217,0.11489
+F4_flores_PEFT_seedmatched,DoRA-44 - OFT-44,-0.701,0.247,0.13699

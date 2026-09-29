@@ -1,0 +1,54 @@
+{
+  "batches": [
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch1_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.166888+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch2_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.222424+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch3_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.276577+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch4_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.328403+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch5_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.380756+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch6_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.447445+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_batch7_of_7.xlsx",
+      "source": "eval",
+      "created_at": "2026-07-25T02:35:25.507453+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_reserve_r01_batch1_of_3.xlsx",
+      "source": "reserve_r01",
+      "created_at": "2026-08-16T19:36:43.468142+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_reserve_r01_batch2_of_3.xlsx",
+      "source": "reserve_r01",
+      "created_at": "2026-08-16T19:36:43.523804+00:00"
+    },
+    {
+      "path": "/content/drive/MyDrive/sango_project2/data_build/deo_candidate_review/deo_review_reserve_r01_batch3_of_3.xlsx",
+      "source": "reserve_r01",
+      "created_at": "2026-08-16T19:36:43.575197+00:00"
+    }
+  ]
+}

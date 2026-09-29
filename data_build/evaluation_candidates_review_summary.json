@@ -1,0 +1,18 @@
+{
+  "total_rows_loaded": 480,
+  "total_decided": 480,
+  "unreviewed_count": 0,
+  "invalid_decision_count": 0,
+  "decision_counts": {
+    "A": 89,
+    "B": 121,
+    "C": 241,
+    "D": 29,
+    "(미기입)": 0,
+    "(잘못된 값)": 0
+  },
+  "finalized_count": 210,
+  "excluded_count": 241,
+  "uncertain_count": 29,
+  "final_target_count": 200
+}

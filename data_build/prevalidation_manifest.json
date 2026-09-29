@@ -1,0 +1,71 @@
+{
+  "source": {
+    "dataset": "allenai/nllb",
+    "config": "eng_Latn-sag_Latn",
+    "revision_used": "c36967abb45f06ff7659849372ab41e01838193e",
+    "note": "revision은 HF repo(로딩 스크립트)의 commit sha다. 실제 병렬 데이터는 AllenAI GCS(storage.googleapis.com/allennlp-data-bucket/nllb/)에서 별도로 받아오므로, GCS 파일 자체의 byte-level 불변성까지는 보장하지 않는다. 그래서 final_clean_pool의 content-based pair_id와 SHA-256을 별도로 보존한다.",
+    "datasets_library_version": "3.6.0",
+    "loaded_rows_this_run": 3607439,
+    "laser_threshold": 1.0,
+    "rows_after_laser_filter": 3607439
+  },
+  "vocabulary": {
+    "dataset": "MEYNG/sango-vocabulary",
+    "filename": "vocabulary.jsonl",
+    "repo_sha_at_fetch_time": "24e7dda61bc5447a9bb598c2ae3783196870a194",
+    "n_entries": 607,
+    "n_french_tokens": 653,
+    "source_file_sha256": "5c204e1acc92d52902e22476b9d5e96f46d190041633968aef2f57fcb8c37932"
+  },
+  "parameters": {
+    "laser_threshold": 1.0,
+    "min_len": 3,
+    "max_len": 200,
+    "len_ratio_max": 3.0,
+    "french_threshold": 0.3,
+    "candidate_seed": 42,
+    "train_seed": 42,
+    "candidate_count": 350,
+    "train_count": 9000
+  },
+  "filter_statistics": {
+    "input_after_laser": 3607439,
+    "removed_empty": 0,
+    "removed_exact_duplicate": 66,
+    "removed_below_min_length": 111218,
+    "removed_above_max_length": 0,
+    "removed_excessive_length_ratio": 48314,
+    "removed_script_invalid": 9459,
+    "removed_degenerate": 3583,
+    "removed_french_contamination": 200958,
+    "removed_pair_id_duplicate": 220497,
+    "final_clean_pool_size": 3013344,
+    "final_clean_pool_sha256": "5504bb5dc13a630f6018725c1e7ee48dbe546d9a1eb24f344c9ca9525169f691"
+  },
+  "artifacts": {
+    "final_clean_pool_sha256": "5504bb5dc13a630f6018725c1e7ee48dbe546d9a1eb24f344c9ca9525169f691",
+    "evaluation_candidates_sha256": "75268179e4ccf15e7bd2df5e501d4b7b29b25d16ede44b0c1db57ac27d56f262",
+    "direct9k_train_sha256": "3af7cafb3e2377aa4944a020a7c0347ab84584902f7f618d74dbb54af228dcab"
+  },
+  "audit": {
+    "checks": {
+      "pair_id_disjoint": true,
+      "candidate_count_matches": true,
+      "train_count_matches": true,
+      "train_ids_unique": true,
+      "candidate_ids_unique": true,
+      "candidate_en_unique": true,
+      "candidate_sg_unique": true,
+      "normalized_en_overlap": 0,
+      "normalized_sg_overlap": 0,
+      "lineage_consistent": true,
+      "candidate_sidecar_matches": true
+    },
+    "hard_failures": [],
+    "artifact_hashes": {
+      "final_clean_pool_sha256": "5504bb5dc13a630f6018725c1e7ee48dbe546d9a1eb24f344c9ca9525169f691",
+      "evaluation_candidates_sha256": "75268179e4ccf15e7bd2df5e501d4b7b29b25d16ede44b0c1db57ac27d56f262",
+      "direct9k_train_sha256": "3af7cafb3e2377aa4944a020a7c0347ab84584902f7f618d74dbb54af228dcab"
+    }
+  }
+}

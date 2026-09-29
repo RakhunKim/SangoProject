@@ -1,0 +1,74 @@
+{
+  "purpose": "dev50 vs test150 구성 감사 — 성능 격차(dev chrF 58~59 vs test chrF 49~51)에 대한 대안적 설명 조사",
+  "pipeline_reproduction_check": {
+    "method": "9 best checkpoint를 evaluate_checkpoint.py로 adaptation-dev50 재평가",
+    "result": "9개 전부 학습 중 기록값과 소수점 셋째자리까지 정확히 일치",
+    "conclusion": "파이프라인 불일치 가설 완전 기각"
+  },
+  "zero_shot_dev_vs_test": {
+    "dev_chrf": 52.326,
+    "test_chrf": 54.57,
+    "diff": 2.244,
+    "note": "zero-shot은 dev/test 차이가 작고 자연스러운 방향(오히려 test가 높음)"
+  },
+  "length_audit": {
+    "dev": {
+      "en_mean_chars": 59.3,
+      "en_median_chars": 51.0,
+      "sg_mean_chars": 69.4,
+      "sg_median_chars": 61.0
+    },
+    "test": {
+      "en_mean_chars": 46.4,
+      "en_median_chars": 38.5,
+      "sg_mean_chars": 52.9,
+      "sg_median_chars": 42.0
+    },
+    "note": "dev가 test보다 원문·참조 둘 다 28~45% 더 김"
+  },
+  "decision_ratio_audit": {
+    "dev": {
+      "A_usable_as_is": 1.0,
+      "B_revised_by_deo": 0.0
+    },
+    "test": {
+      "A_usable_as_is": 0.253,
+      "B_revised_by_deo": 0.747
+    },
+    "note": "dev는 100% 원본 마이닝 번역 그대로(A), test는 75%가 Deo가 직접 수정한 번역(B) — 참조 문체가 근본적으로 다른 두 집단"
+  },
+  "origin_batch_audit": {
+    "dev": {
+      "initial350": 1.0,
+      "reserve": 0.0
+    },
+    "test": {
+      "initial350": 0.64,
+      "reserve": 0.36
+    }
+  },
+  "n_review_rows_total": 480,
+  "interpretation": "Pipeline check로 재현성 100% 확인, 버그 아님. dev/test 성능 격차는 development-set optimism(작은 dev에서 반복 checkpoint selection) 단독보다, dev가 100% 원본 마이닝 스타일 참조로만 구성되고 Direct-9K 학습데이터도 같은 마이닝 파이프라인 산출물이라는 구성적 차이가 더 강한 설명력을 가짐. zero-shot은 이 마이닝 스타일에 맞춰진 적이 없어 dev/test 격차가 거의 없었던 것과 정합적. 단일 원인으로 확정하지 않고 \"consistent with\" 톤 유지 권장.",
+  "root_cause_investigation": {
+    "question": "A/B 비율이 dev=100%A vs test=25.3%A로 극단적으로 쏠린 이유는 무엇인가 — 우연인가, 파이프라인 설계 문제인가?",
+    "method": "build_final_splits.py와 build_adaptation_split.py의 seeded_rank() 사용처 전수 조사 + 실제 데이터로 재현 검증",
+    "finding": {
+      "seed_reuse": "CANDIDATE_SEED(build_final_splits.py, 후보350 추출용)=42, split_seed(build_adaptation_split.py, dev/test 분할용)=42 — 동일 seed 재사용",
+      "pair_id_identity_for_A": "Decision=A(원본유지) 항목은 final_pair_id == source_pair_id(완전 동일 문자열, 직접 확인)",
+      "mechanism": "A 항목은 후보선정 단계에서 seeded_rank(pair_id, 42)로 랭킹되어 선택됨. 동일한 pair_id 문자열이 dev/test 분할 단계에서 seeded_rank(final_pair_id=pair_id, 42)로 다시 해싱되며 정확히 같은(극도로 낮은) hash값이 재현되어 dev(상위 50) 최상위권을 필연적으로 독점. B 항목은 sg 내용 변경으로 final_pair_id가 완전히 새로 계산되어 이 연결고리가 끊김."
+    },
+    "verification": {
+      "top60_rank_key_pattern": "상위 60개 전부 revised=False(A), rank_key 16진수 앞자리가 0x0000~0x0007대에 집중",
+      "a_vs_b_rankkey_scale": {
+        "A_min": 24795,
+        "A_median": 348811,
+        "A_max": 4171219690,
+        "B_min": 13873938,
+        "B_median": 1905277797,
+        "B_max": 4240977967
+      },
+      "reproduction_check": "직접 재현한 dev 50개 sentence_id 집합이 adaptation_split_manifest.json 기록과 50/50 완전 일치 — 계산 오류 아님, 실제 파이프라인 동작 확인"
+    },
+    "conclusion": "dev가 100% Decision A(원본 마이닝 번역)로만 구성된 것은 무작위 소표본 변동이 아니라 CANDIDATE_SEED와 split_seed의 재사용, 그리고 A항목의 final_pair_id가 원본 pair_id와 동일하다는 사실이 결합되어 발생한 결정론적(deterministic) 구조적 산물임. 이는 데이터 구축 파이프라인의 재현성 이슈로, 원고 Methods에 \"random-like deterministic split\"이 아니라 이 seed 재사용 상호작용을 명시적으로 disclose하는 것이 권장됨."
+  }
+}

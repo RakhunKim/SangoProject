@@ -1,0 +1,23 @@
+{
+  "condition": "dtype=torch.float32 (default) backbone load + Seq2SeqTrainingArguments(fp16=False, bf16=False)",
+  "finding": "all 12 grad_norm values finite, no NaN. learning_rate trajectory matches LoRA/DoRA fp16 runs exactly (peak at step 3, ~1e-05 at step 12) -> optimizer_step_was_skipped never triggered.",
+  "grad_norm_all_steps": [
+    35.55,
+    41.38,
+    58.85,
+    53.78,
+    46.03,
+    42.6,
+    54.8,
+    28.16,
+    42.78,
+    33.74,
+    44.99,
+    29.69
+  ],
+  "max_steps": 12,
+  "method": "oft",
+  "recorded_at": "2026-09-28T23:18:45.716661+00:00",
+  "result": "PASS",
+  "seed": 42
+}

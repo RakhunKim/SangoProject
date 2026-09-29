@@ -1,0 +1,14 @@
+{
+  "input_after_laser": 3607439,
+  "removed_empty": 0,
+  "removed_exact_duplicate": 66,
+  "removed_below_min_length": 111218,
+  "removed_above_max_length": 0,
+  "removed_excessive_length_ratio": 48314,
+  "removed_script_invalid": 9459,
+  "removed_degenerate": 3583,
+  "removed_french_contamination": 200958,
+  "removed_pair_id_duplicate": 220497,
+  "final_clean_pool_size": 3013344,
+  "final_clean_pool_sha256": "5504bb5dc13a630f6018725c1e7ee48dbe546d9a1eb24f344c9ca9525169f691"
+}
